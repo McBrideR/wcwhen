@@ -4,13 +4,18 @@ import (
 	"flag"
 	"fmt"
 	"time"
+
+	"github.com/McBrideR/wcwhen/scraper"
 )
+
 //to set up go
 //GOROOT=/usr/local/Cellar/go/1.12.9/libexec #gosetup
 //GOPATH=/Users/rossmcbride/go #gosetup
 
 //to build package with different executable name
 //go build -o wcwhen
+
+//talk to scott about vendoring
 
 var country string
 var groupName string
@@ -26,4 +31,5 @@ func main() {
 	flag.Parse()
 	fmt.Println("Hello, World")
 	fmt.Println(country)
+	scraper.GetMatchStats()
 }

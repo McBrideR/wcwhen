@@ -1,6 +1,9 @@
 package commandReader
 
-import "time"
+import (
+	"time"
+	"scrapper"
+)
 
 var country string
 var groupName string
@@ -9,3 +12,7 @@ var dateTime time.Time
 var team1 string
 
 var team2 string
+
+func readInput() {
+
+}

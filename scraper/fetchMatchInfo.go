@@ -1,12 +1,8 @@
 package scraper
 
-import (
-	"fmt"
-	"net/http"
-)
-
-func GetMatchStats() {
-	resp, _ := http.Get("http://example.com/")
-
-	fmt.Println(resp)
+func GetMatchStats(country string) {
+	//resp, _ := http.Get("https://cmsapi.pulselive.com/rugby/event/1558/schedule")
+	//
+	//fmt.Println(resp.Status)
+	//fmt.Println(country)
 }
